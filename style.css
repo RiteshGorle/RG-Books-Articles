@@ -1,0 +1,100 @@
+/* WebSite Name: Wiserway Dummy
+   Made by: Ritesh Gorle
+   Created: March 2023
+   Content: Books and article
+*/
+
+/*****************************************
+Table Of Contents:
+
+01. BASIC CSS Style
+02. NAVBAR
+03. LOGO
+04. MAIN CONTENT
+
+******************************************/
+
+
+/******************************/
+/*   01. BASIC CSS Style      */
+/******************************/   
+
+body{
+  background: black;
+}
+
+section{
+  background: url('bg.jpg');
+  background-size: cover;
+}
+
+
+/******************************/
+/*       02.NAVBAR           */
+/******************************/   
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0) !important;
+  transition-property: background-color, color;
+  transition-duration: 0.5s;
+  transition-function: ease-in-out;
+}
+
+.navbar-black {
+  background-color: rgb(168, 82, 255) !important;
+  color: red !important;
+}
+
+.navbar-collapse, .navbar-nav, .nav-item {
+  color:  !important;
+}
+
+.nav-link{
+  font-size: 18px;
+  padding: 20px;
+}
+
+
+
+/******************************/
+/*          03. LOGO          */
+/******************************/   
+.logo{
+  border-radius: 20px;
+}
+
+
+/******************************/
+/*      04. MAIN CONTENT      */
+/******************************/   
+h1 {
+  font-weight: 900;
+  color: white;
+}
+
+.para{
+  color:white;
+  font-size: 18px;
+}
+
+.button1{
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  background: #9933ff;
+  color: white;
+  font-size: 16px;
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 1080px) {
+  #my-content { display: none; }  /* hide it elsewhere */
+
+  #why-content { display: block; }
+}
+
+@media screen and (min-width: 1081px) and (max-width: 4000px) {
+  #my-content { display:block; }  /* show it on big screens */
+   
+   #why-content { display: none; }
+}
